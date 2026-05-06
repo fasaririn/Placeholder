@@ -164,7 +164,7 @@ function parseStory()
       if(!characterData)
       {
         //No character data? Too bad, we'll add some default stuff then.
-        characterData = {"id":"default", "pose":"hidden"};
+        characterData = {"id":"narrator", "pose":"hidden"};
       } else
       {
         //Remove the character data from the line to continue parsing it properly

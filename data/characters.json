@@ -1,8 +1,14 @@
 {
-  "default":{
+  "narrator":{
     "poses":{
     },
     "name":"Narrator"
+  },
+
+  "default":{
+    "poses":{
+    },
+    "name":"MC"
   },
 
   "teacher":{
