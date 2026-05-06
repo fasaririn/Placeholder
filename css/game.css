@@ -1,43 +1,90 @@
 body
 {
-	background-color:rgb(110,110,110);
-	background-image:url('../img/defaultBackground.png');
-	background-size:100% 100%;
+	box-sizing: border-box;
+	margin: 0;
+	min-height: 100vh;
+	font-family: 'Nunito', sans-serif;
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/bedroom.png') center/cover no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
 }
+
 #container
 {
-	font-size:17px;
-	font-family: 'Nunito', sans-serif;
-	margin: 30px auto;
-	width:800px;
-	height:600px;
-	border:8px solid rgba(0,0,0,0.3);
-	border-radius:8px;
-	position:relative;
-	overflow:hidden;
-	background:black;
+	font-size: 17px;
+	margin: 20px;
+	width: min(920px, calc(100vw - 40px));
+	min-height: 640px;
+	border: 2px solid rgba(255, 255, 255, 0.9);
+	border-radius: 18px;
+	position: relative;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.78);
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.55);
 }
+
 h1
 {
-	font-size:48px;
+	font-size: 32px;
 	font-family: 'Poiret One', sans-serif;
-	padding-top: 30px;
-	text-align:center;
-	color:white;
-	text-shadow:0px 0px 50px pink;
+	margin: 0 0 16px;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 20px rgba(255, 192, 203, 0.8);
 }
+
 #sceneContent
 {
-	position:absolute;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 }
+
+#placeName,
+#choices,
+#characterName
+{
+	position: relative;
+	z-index: 2;
+}
+
+#placeName
+{
+	padding: 16px 24px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+
+#choices
+{
+	position: absolute;
+	bottom: 24px;
+	left: 0;
+	width: 100%;
+	padding: 0 24px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+#characterName
+{
+	margin-bottom: 12px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
 .character
 {
-	position:absolute;
-	width:268px;
-	height:450px;
-	left:450px;
-	top:150px;
-	background-repeat:no-repeat;
+	position: absolute;
+	width: 268px;
+	height: 450px;
+	left: 450px;
+	top: 150px;
+	background-repeat: no-repeat;
 }
